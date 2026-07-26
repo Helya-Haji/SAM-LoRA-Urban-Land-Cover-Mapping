@@ -38,7 +38,7 @@ The framework is evaluated on the **OpenEarthMap** benchmark and compared agains
 ## Repository Structure
 
 ```
-SAM-LoRA-Urban-LandCover
+SAM-LoRA-Urban-Land-Cover-Mapping
 │
 ├── models/
 │   ├── sam_lora/
@@ -71,7 +71,7 @@ Clone the repository
 ```bash
 git clone https://github.com/USERNAME/SAM-LoRA-Urban-LandCover.git
 
-cd SAM-LoRA-Urban-LandCover
+cd SAM-LoRA-Urban-Land-Cover-Mapping
 ```
 
 Install dependencies
