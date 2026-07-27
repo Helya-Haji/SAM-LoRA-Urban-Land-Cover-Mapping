@@ -106,7 +106,7 @@ Then update the checkpoint path in the code accordingly.
 Run
 
 ```bash
-python models/sam_lora/train.py
+python models/sam_lora/sam_lora_train.py
 ```
 
 ---
@@ -116,7 +116,7 @@ python models/sam_lora/train.py
 Run
 
 ```bash
-python models/sam_lora/inference.py
+python models/sam_lora/sam_lora_inference.py
 ```
 
 ---
