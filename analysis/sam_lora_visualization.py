@@ -7,7 +7,7 @@ import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
 
-from train import (
+from models.sam_lora.sam_lora_train import (
     IMAGE_SIZE,
     NUM_CLASSES,
     SAM_LoRA,
