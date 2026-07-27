@@ -23,7 +23,7 @@ CLASS_NAMES = [
 VALID_CLASSES = [1, 2, 3, 4, 5, 6, 7, 8]
 
 # LOAD MODEL
-from train import SAM_LoRA, SAM_CHECKPOINT
+from models.sam_lora.sam_lora_train import SAM_LoRA, SAM_CHECKPOINT
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
