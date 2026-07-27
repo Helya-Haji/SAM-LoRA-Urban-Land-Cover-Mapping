@@ -22,8 +22,15 @@ LR = 1e-4
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 CLASS_NAMES = [
-    "others","bareland","rangeland","developed",
-    "Road","Tree","Water","Agriculture","Building"
+    "others",       # 0 — ignored
+    "bareland",     # 1
+    "rangeland",    # 2
+    "developed",    # 3
+    "Road",        # 4
+    "Tree",       # 5
+    "Water",  # 6
+    "Agriculture",      # 7
+    "Building",      # 8
 ]
 
 
