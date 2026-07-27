@@ -11,9 +11,8 @@ import pandas as pd
 import torchvision
 from torchvision.models.segmentation import deeplabv3_resnet50, DeepLabV3_ResNet50_Weights
 
-# ======================
+
 # CONFIG
-# ======================
 IMAGE_SIZE = 512
 NUM_CLASSES = 9
 IGNORE_INDEX = 0
