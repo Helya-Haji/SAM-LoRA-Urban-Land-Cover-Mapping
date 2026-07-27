@@ -27,10 +27,7 @@ from models.sam_lora.sam_lora_train import SAM_LoRA, SAM_CHECKPOINT
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-model = SAM_LoRA(
-    checkpoint=SAM_CHECKPOINT,
-    num_classes=NUM_CLASSES
-).to(device)
+model = SAM_LoRA(checkpoint=SAM_CHECKPOINT, num_classes=NUM_CLASSES).to(device)
 
 model.load_state_dict(
     torch.load(
@@ -88,16 +85,9 @@ def analyze_city(file_list):
 
             mask = cv2.imread(mask_path, 0)
 
-            img = cv2.resize(
-                img,
-                (IMAGE_SIZE, IMAGE_SIZE)
-            )
+            img = cv2.resize(img, (IMAGE_SIZE, IMAGE_SIZE))
 
-            mask = cv2.resize(
-                mask,
-                (IMAGE_SIZE, IMAGE_SIZE),
-                interpolation=cv2.INTER_NEAREST
-            )
+            mask = cv2.resize(mask, (IMAGE_SIZE, IMAGE_SIZE), interpolation=cv2.INTER_NEAREST)
 
             total_pixels += mask.size
 
