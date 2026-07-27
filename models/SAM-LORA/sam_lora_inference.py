@@ -13,7 +13,7 @@ from tqdm import tqdm
 from ptflops import get_model_complexity_info
 
 
-from train import (
+from sam_lora_train import (
     IMAGE_SIZE,
     NUM_CLASSES,
     IGNORE_INDEX,
