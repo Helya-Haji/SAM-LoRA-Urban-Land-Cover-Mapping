@@ -38,27 +38,28 @@ The framework is evaluated on the **OpenEarthMap** benchmark and compared agains
 ## Repository Structure
 
 ```
-SAM-LoRA-Urban-Land-Cover-Mapping
-│
-├── models/
-│   ├── sam_lora/
-│   ├── deeplabv3/
-│   ├── unet/
-│   └── unet_resnet34/
+SAM-LoRA-Urban-Land-Cover-Mapping/
 │
 ├── analysis/
 │   ├── urban_land_cover_analysis.py
 │   ├── visualization.py
 │   └── class_proportion_test.py
 │
+├── models/
+│   ├── sam_lora/
+│   │   ├── sam_lora_train.py
+│   │   ├── sam_lora_inference.py
+│   │
+│   ├── deeplabv3/
+│   ├── unet/
+│   └── unet_resnet34/
+│
 ├── data/
-│
 ├── checkpoints/
-│
 ├── outputs/
 │
 ├── requirements.txt
-└──README.md
+└── README.md
 
 ```
 
